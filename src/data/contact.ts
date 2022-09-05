@@ -1,0 +1,9 @@
+export const contactEmail = "sinanbekar.work@gmail.com";
+export const githubUsername = "sinanbekar";
+export const githubProfileUrl = `https://github.com/${githubUsername}`;
+export const twitterUsername = "sinanbekarr";
+export const twitterProfileUrl = `https://twitter.com/${twitterUsername}`;
+export const linkedinUsername = "sinanbekar";
+export const linkedinProfileUrl = `https://www.linkedin.com/in/${linkedinUsername}`;
+export const mediumUsername = "sinan.bekar";
+export const mediumProfileUrl = `https://medium.com/@${mediumUsername}`;
