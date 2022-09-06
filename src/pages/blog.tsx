@@ -1,6 +1,6 @@
 import { InferGetStaticPropsType } from "next";
 import { NextSeo } from "next-seo";
-import ExternalContentItem from "../components/ExternalContentItem";
+import ExternalPost from "../components/ExternalPost";
 import { getPosts } from "../lib/posts";
 
 const seo = {
@@ -19,7 +19,7 @@ const Blog = ({ posts }: InferGetStaticPropsType<typeof getStaticProps>) => {
         <ul>
           {posts.map((post) => (
             <li key={post.id}>
-              <ExternalContentItem {...post} />
+              <ExternalPost {...post} />
             </li>
           ))}
         </ul>

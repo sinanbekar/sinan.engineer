@@ -20,7 +20,7 @@ const Home: NextPage = () => {
       <section className="pb-16">
         <div className="mx-auto flex max-w-2xl flex-col items-center justify-center">
           <h1
-            className="mb-1 bg-slate-800 bg-clip-text fill-transparent text-[2.4rem] leading-none font-bold tracking-tight text-transparent 
+            className="mb-1 bg-slate-800 bg-clip-text fill-transparent text-[2.4rem] font-bold leading-none tracking-tight text-transparent 
           dark:animate-shine  dark:bg-gradient-to-l dark:from-sky-800 dark:to-sky-400 md:text-6xl"
           >
             Sinan Bekar
@@ -118,7 +118,10 @@ const Home: NextPage = () => {
               things and solving problems. I have been programming since I was
               10.
             </p>
-            <p className="mt-2">I&#39;m currently working as a freelancer. Please don&#39;t hesitate to reach out.</p>
+            <p className="mt-2">
+              I&#39;m currently working as a freelancer. Please don&#39;t
+              hesitate to reach out.
+            </p>
             <p className="mt-4">
               Here are a few technologies that I am currently interested in and
               working on.
@@ -165,28 +168,25 @@ const Home: NextPage = () => {
           <div className="pt-6">
             <FeaturedProjects />
           </div>
-          <a
-            href={githubProfileUrl}
-            target="_blank"
-            className="flex h-6 items-center rounded-lg leading-7 text-slate-600 transition-all hover:text-slate-800 dark:text-slate-400 dark:hover:text-slate-200"
-            rel="noopener noreferrer"
-          >
-            See more projects
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              className="ml-1 h-6 w-6"
-            >
-              <path
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M17.5 12h-15m11.667-4l3.333 4-3.333-4zm3.333 4l-3.333 4 3.333-4z"
-              />
-            </svg>
-          </a>
+          <Link href="/projects">
+            <a className="flex h-6 items-center rounded-lg leading-7 text-slate-600 transition-all hover:text-slate-800 dark:text-slate-400 dark:hover:text-slate-200">
+              See more projects
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                className="ml-1 h-6 w-6"
+              >
+                <path
+                  stroke="currentColor"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M17.5 12h-15m11.667-4l3.333 4-3.333-4zm3.333 4l-3.333 4 3.333-4z"
+                />
+              </svg>
+            </a>
+          </Link>
         </div>
       </section>
       <section className="pb-16">

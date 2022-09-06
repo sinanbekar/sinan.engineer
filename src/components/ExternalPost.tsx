@@ -1,16 +1,12 @@
-type ExternalContentItemProps = {
+type ExternalPostProps = {
   title: string;
   link: string;
-  source?: string;
   excerpt: string;
 };
 
-const ExternalContentItem = ({
-  title,
-  link,
-  excerpt,
-  source,
-}: ExternalContentItemProps) => {
+const ExternalPost = ({ title, link, excerpt }: ExternalPostProps) => {
+  const source = new URL(link).hostname;
+
   return (
     <a
       href={link}
@@ -32,11 +28,9 @@ const ExternalContentItem = ({
             transform="matrix(1 0 0 -1 30.373 1426.95)"
           />
         </svg>
-        {source ? (
-          <span className="mt-1 text-sm group-hover:text-black dark:group-hover:text-slate-300">
-            {source}
-          </span>
-        ) : null}
+        <span className="mt-1 text-sm group-hover:text-black dark:group-hover:text-slate-300">
+          {source}
+        </span>
       </div>
       <p className="text-sm transition-all group-hover:text-slate-700 dark:group-hover:text-slate-400">
         {excerpt}
@@ -45,4 +39,4 @@ const ExternalContentItem = ({
   );
 };
 
-export default ExternalContentItem;
+export default ExternalPost;
