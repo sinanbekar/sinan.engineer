@@ -3,18 +3,5 @@
 @tailwind utilities;
 
 #__next {
-  @apply flex flex-col min-h-screen justify-start;
-}
-
-/* https://seek-oss.github.io/capsize/ */
-.capsize::before {
-  content: "";
-  margin-bottom: -0.098em;
-  display: table;
-}
-
-.capsize::after {
-  content: "";
-  margin-top: -0.219em;
-  display: table;
+  @apply flex min-h-screen flex-col justify-start;
 }

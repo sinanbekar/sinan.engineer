@@ -26,7 +26,7 @@ const About: NextPage = () => {
           <h2 className="text-xl font-bold text-black dark:text-white md:text-3xl">
             Skills
           </h2>
-          <div className="my-4 flex flex-wrap">
+          <div className="my-4 flex flex-col md:flex-row md:flex-wrap">
             <div className="flex-1">
               <span className="font-semibold dark:text-slate-300">
                 Programming Languages

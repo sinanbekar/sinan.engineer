@@ -20,7 +20,7 @@ const Home: NextPage = () => {
       <section className="pb-16">
         <div className="mx-auto flex max-w-2xl flex-col items-center justify-center">
           <h1
-            className="mb-1 bg-slate-800 bg-clip-text fill-transparent text-4xl font-bold tracking-tight text-transparent 
+            className="mb-1 bg-slate-800 bg-clip-text fill-transparent text-[2.4rem] leading-none font-bold tracking-tight text-transparent 
           dark:animate-shine  dark:bg-gradient-to-l dark:from-sky-800 dark:to-sky-400 md:text-6xl"
           >
             Sinan Bekar

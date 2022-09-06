@@ -10,9 +10,9 @@ const Footer = () => (
       <span>•</span>
       <Link href="/blog">Blog</Link>
     </div>
-    <div className="mb-3 flex space-x-2 text-sm text-slate-500 dark:text-slate-400">
-      <span>© Copyright 2022 Sinan Bekar. All rights reserved.</span>
-    </div>
+    <span className="m-3 mt-0 text-center text-sm text-slate-500 dark:text-slate-400">
+      © Copyright 2022 Sinan Bekar. All rights reserved.
+    </span>
   </footer>
 );
 
