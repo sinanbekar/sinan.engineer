@@ -1,12 +1,12 @@
 import { featuredProjects } from "../data";
-import ExternalContentItem from "./ExternalContentItem";
+import Project from "./Project";
 
 const FeaturedProjects = () => {
   return (
     <ul>
       {featuredProjects.map((project, idx) => (
         <li key={idx}>
-          <ExternalContentItem {...project} />
+          <Project {...project} />
         </li>
       ))}
     </ul>

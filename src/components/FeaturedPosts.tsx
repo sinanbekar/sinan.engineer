@@ -1,12 +1,12 @@
 import { featuredPosts } from "../data";
-import ExternalContentItem from "./ExternalContentItem";
+import ExternalPost from "./ExternalPost";
 
 const FeaturedPosts = () => {
   return (
     <ul>
       {featuredPosts.map((post, idx) => (
         <li key={idx}>
-          <ExternalContentItem {...post} />
+          <ExternalPost {...post} />
         </li>
       ))}
     </ul>

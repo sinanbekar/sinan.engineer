@@ -77,7 +77,7 @@ const Header = () => {
               <span className="sr-only">Open main menu</span>
               {!isMenuOpen ? (
                 <svg
-                  className="h-5 w-5 text-gray-900 dark:text-gray-100"
+                  className="h-5 w-5 text-slate-900 dark:text-slate-100"
                   viewBox="0 0 20 20"
                   fill="none"
                   data-hide="false"
@@ -99,7 +99,7 @@ const Header = () => {
                 </svg>
               ) : (
                 <svg
-                  className="h-5 w-5 text-gray-900 dark:text-gray-100"
+                  className="h-5 w-5 text-slate-900 dark:text-slate-100"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
                   strokeWidth="1.5"
@@ -128,6 +128,7 @@ const Header = () => {
           >
             <NavItem href="/" text="Home" />
             <NavItem href="/about" text="About" />
+            <NavItem href="/projects" text="Projects" />
             <NavItem href="/blog" text="Blog" />
           </ul>
         </div>
