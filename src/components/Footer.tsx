@@ -8,6 +8,8 @@ const Footer = () => (
       <span>•</span>
       <Link href="/about">About</Link>
       <span>•</span>
+      <Link href="/projects">Projects</Link>
+      <span>•</span>
       <Link href="/blog">Blog</Link>
     </div>
     <span className="m-3 mt-0 text-center text-sm text-slate-500 dark:text-slate-400">
