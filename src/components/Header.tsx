@@ -12,17 +12,17 @@ const NavItem = ({ href, text }: NavItemProps) => {
   const isActive = router.asPath === href;
 
   return (
-    <li>
+    <li className="border-b border-slate-300 dark:border-slate-700 md:border-none">
       <NextLink href={href}>
         <a
           className={cn(
             isActive
               ? "font-semibold text-slate-800 dark:text-slate-200"
               : "font-normal text-slate-600 dark:text-slate-400",
-            "rounded-lg text-sm transition-all hover:bg-slate-200 dark:hover:bg-slate-800 sm:px-3 sm:py-2 md:inline-block md:text-base"
+            "block rounded-lg pb-6 text-sm transition-all hover:bg-slate-200 dark:hover:bg-slate-800 sm:px-3 sm:py-2 md:inline-block md:text-base"
           )}
         >
-          <span>{text}</span>
+          {text}
         </a>
       </NextLink>
     </li>
@@ -120,10 +120,10 @@ const Header = () => {
           <ul
             id="navbar-menu"
             className={cn(
-              "z-50 w-full flex-col space-y-10 md:m-0 md:-ml-[0.60rem] md:flex md:h-auto md:flex-row md:space-y-0 md:p-0 md:opacity-100",
+              "absolute z-50 mt-8 min-h-screen w-full flex-col space-y-6 bg-slate-50 p-2 opacity-100 transition-[opacity,visibility] duration-300 dark:bg-slate-900 md:static md:m-0 md:-ml-[0.60rem] md:flex md:h-auto md:min-h-0 md:flex-row md:space-y-0 md:bg-transparent md:p-0 md:opacity-100 md:transition-none",
               isMenuOpen
-                ? "mt-8 flex h-screen p-2 opacity-100"
-                : "m-0 hidden h-0 p-0 opacity-0"
+                ? "visible opacity-100"
+                : "invisible opacity-0 md:visible md:opacity-100"
             )}
           >
             <NavItem href="/" text="Home" />
