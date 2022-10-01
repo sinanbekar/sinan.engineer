@@ -17,9 +17,23 @@ export const projects = [
   {
     title: "next-moviapp",
     excerpt:
-      "Explore movies, tv shows. Built with Next.js, Tailwind CSS, Redux, Firebase, TypeScript, TMDB v3 API.",
+      "Explore movies, tv shows. Personalize watchlist and favorites. Built with Next.js, Tailwind CSS, Firebase, NextAuth, TypeScript, TMDB v3 API.",
     sourceLink: "https://github.com/sinanbekar/next-moviapp",
     homepageLink: "https://next-moviapp.vercel.app",
+  },
+  {
+    title: "umuttepe-hava-botu",
+    excerpt:
+      "Twitter bot that tweets Umuttepe weather conditions with live camera frames periodically.",
+    sourceLink: "https://github.com/sinanbekar/umuttepe-hava-botu",
+    homepageLink: "https://twitter.com/umuttepedehava",
+  },
+  {
+    title: "umuttepe-hava",
+    excerpt:
+      "Progressive web application for Umuttepe weather conditions, includes live stream in the background. Built with Next.js, TypeScript and Tailwind CSS.",
+    sourceLink: "https://github.com/sinanbekar/umuttepe-hava",
+    homepageLink: "http://umuttepe-hava.vercel.app",
   },
   {
     title: "laravel-real-time-chat-app",
@@ -60,20 +74,6 @@ export const projects = [
     excerpt:
       "Sync Laravel queue (Redis driven) with Python. Provides an interface for communication between Laravel and Python. Perfect for serving deep learning, artificial intelligence applications as a service.",
     sourceLink: "https://github.com/sinanbekar/python-laravel-queue",
-  },
-  {
-    title: "umuttepe-hava-botu",
-    excerpt:
-      "Twitter bot that tweets Umuttepe weather conditions with live camera frames periodically.",
-    sourceLink: "https://github.com/sinanbekar/umuttepe-hava-botu",
-    homepageLink: "https://twitter.com/umuttepedehava",
-  },
-  {
-    title: "umuttepe-hava-pwa",
-    excerpt:
-      "Progressive web application for Umuttepe weather conditions and live footage. Built with React & Tailwind CSS.",
-    sourceLink: "https://github.com/sinanbekar/umuttepe-hava-pwa",
-    homepageLink: "http://umuttepe-hava-pwa.vercel.app",
   },
   {
     title: "demo-almost-netflix-for-web-next",

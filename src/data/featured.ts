@@ -1,6 +1,6 @@
 import { projects } from "./projects";
 
-export const featuredProjects = projects.slice(0, 2);
+export const featuredProjects = projects.slice(0, 3);
 
 export const featuredPosts = [
   {
